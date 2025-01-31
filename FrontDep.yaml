@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: furniture-frontend
-        image: your-dockerhub-username/furniture-frontend:latest
+        image: ayman380/furniture-frontend:latest
         ports:
         - containerPort: 80
