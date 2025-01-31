@@ -33,5 +33,5 @@ jobs:
 
       - name: Deploy WordPress
         run: |
-          kubectl apply -f manifests/Deployment.yaml
-          kubectl apply -f manifests/wordpreesvolume.yaml
+          kubectl apply -f CICDEKS/Deployment.yaml
+          kubectl apply -f CICDEKS/wordpreesvolume.yaml
