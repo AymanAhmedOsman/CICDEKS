@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: furniture-frontend
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: furniture-frontend
+  template:
+    metadata:
+      labels:
+        app: furniture-frontend
+    spec:
+      containers:
+      - name: furniture-frontend
+        image: your-dockerhub-username/furniture-frontend:latest
+        ports:
+        - containerPort: 80
