@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: ecommerce-frontend
-        image: ayman380/ecommerce-frontend:v1
+        image: ayman380/ecommerce-frontend:v2
         ports:
         - containerPort: 80
