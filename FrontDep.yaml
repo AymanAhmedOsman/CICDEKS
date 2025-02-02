@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: furniture-frontend
+  name: ecommerce-frontend
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: furniture-frontend
+      app: ecommerce-frontend
   template:
     metadata:
       labels:
-        app: furniture-frontend
+        app: ecommerce-frontend
     spec:
       containers:
-      - name: furniture-frontend
-        image: ayman380/furniture-frontend:latest
+      - name: ecommerce-frontend
+        image: ayman380/ecommerce-frontend:v1
         ports:
         - containerPort: 80
