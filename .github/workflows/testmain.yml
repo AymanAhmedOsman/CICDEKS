@@ -23,8 +23,8 @@ jobs:
 
       - name: Build and push Docker image
         run: |
-          docker build -t ayman380/furniture-frontend:latest .
-          docker push ayman380/furniture-frontend:latest
+          docker build -t ayman380/ecommerce-frontend:v1 .
+          docker push ayman380/ecommerce-frontend:v1
 
   deploy:
     needs: build
