@@ -28,7 +28,7 @@ jobs:
 
       - name: Update kubeconfig
         run: |
-          aws eks --region us-east-1 update-kubeconfig --name DEMOCICDRABBIT 
+          aws eks --region us-east-1 update-kubeconfig --name Demo-Test 
 
 
       - name: Deploy WordPress
